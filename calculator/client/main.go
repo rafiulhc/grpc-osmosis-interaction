@@ -8,7 +8,7 @@ import (
 	"google.golang.org/grpc/credentials/insecure"
 )
 
-var addr string = "localhost:50052"
+var addr string = "localhost:50051"
 
 func main() {
 
@@ -20,7 +20,7 @@ func main() {
 
 	defer conn.Close()
 
-	client := pb.NewSumServiceClient(conn)
+	client := pb.NewCalculatorServiceClient(conn)
 
 	DoSum(client)
 
