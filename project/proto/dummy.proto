@@ -1,0 +1,5 @@
+syntax = "proto3";
+
+package project;
+
+option go_package = "github.com/rafiulhc/grpc-osmosis-interaction/project/proto";
